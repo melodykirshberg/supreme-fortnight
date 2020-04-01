@@ -2,7 +2,7 @@ class CreateTechnologies < ActiveRecord::Migration[5.1]
   def change
     create_table :technologies do |t|
       t.string :name
-      t.refernces :portfolio
+      t.references :portfolio, null: false, foreign_key: true
 
       t.timestamps
     end
