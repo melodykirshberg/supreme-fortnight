@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/verlitas/devcamp_view_tool
+  revision: 543b865f9e82e6e0641e4e9e2bae005a1058aca4
+  specs:
+    devcamp_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -224,6 +230,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13.0)
   coffee-rails (~> 4.2)
+  devcamp_view_tool!
   devise (~> 4.2)
   friendly_id (~> 5.2.4)
   jbuilder (~> 2.5)

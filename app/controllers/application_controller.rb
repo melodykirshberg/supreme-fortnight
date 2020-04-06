@@ -4,5 +4,4 @@ protect_from_forgery with: :exception
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-
 end
