@@ -1,4 +1,4 @@
-<header class="masthead mb-auto">
+<header class="masthead">
   <div class="inner">
     <h3 class="masthead-brand">Dante Rossetti</h3>
     <nav class="nav nav-masthead justify-content-center">
@@ -7,6 +7,7 @@
     <div><%= link_to "Contact", contact_path, class: 'nav-link' %></div>
     <div><%= link_to "Blog", blogs_path, class: 'nav-link' %></div>
     <div><%= link_to "Portfolio", portfolios_path, class: 'nav-link' %></div>
-    </nav>
-  </div>
+    <%= login_helper 'nav-link' %>
+  </nav>
+</div>
 </header>
