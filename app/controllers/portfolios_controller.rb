@@ -6,7 +6,15 @@ class PortfoliosController < ApplicationController
   def index
     @portfolio_items = Portfolio.by_position
   end
-  
+ 
+  def sort
+    params[:order].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    render nothing: true
+  end
+
   def angular
     @angular_portfolio_items = Portfolio.angular
   end
@@ -57,7 +65,7 @@ class PortfoliosController < ApplicationController
   def set_portfolio_item
     @portfolio_items = Portfolio.find(params[:id])
   end
-  
+
   private 
   def portfolio_params
     params.require(:portfolio).permit(:title, 
