@@ -42,6 +42,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portfolio'
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+      },
     ]
   end
 
@@ -59,7 +63,7 @@ module ApplicationHelper
     "active" if current_page? path
   end
 
-   def alerts
+  def alerts
     alert = (flash[:alert] || flash[:error] || flash[:notice])
 
     if alert
